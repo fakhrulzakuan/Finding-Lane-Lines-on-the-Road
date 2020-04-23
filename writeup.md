@@ -71,13 +71,9 @@ With both coordinates, a new solid line are drawn to indicates the position of t
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-One potential shortcoming would be when in a situation where there is a sharp road curvature since the solid lines are drawn based on 1st order of linear equation. The drawn line wont be able to fit the lane. 
-
-Another one shorcoming is if there is a shadow, change of lighting (cloudy, sunny) since I used fixed value for 
-
+One potential shortcoming would be when in a situation where there is a sharp road curvature since the solid lines are drawn based on 1st order of linear equation. In this case, the said equation is not suitable to draw line on curve lane. 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to keep the lines drawn from previous frame to avoid flickering between frames. 
+The lines drawn should be more smoother for each frame transition.
